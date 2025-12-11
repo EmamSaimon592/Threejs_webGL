@@ -5,106 +5,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
   <style>
     :root {
-  --primary-orange: #ff6f00;
-  /* Bright Orange Background */
-  --light-cream: #fff8e1;
-  /* Creamy Yellow-White Text */
-  --padding-desktop: 40px;
-  --padding-mobile: 20px;
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-  background-color: var(--primary-orange);
-  color: var(--light-cream);
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  /* Ensures the layout fills the viewport */
-}
+      --primary-orange: #ff6f00;
+      /* Bright Orange Background */
+      --light-cream: #fff8e1;
+      /* Creamy Yellow-White Text */
+      --padding-desktop: 40px;
+      --padding-mobile: 20px;
+    }
 
-h1 {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 1.25;
-}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-p {
-  font-size: 15px;
-  line-height: 1.25;
-}
+    body {
+      background-color: var(--primary-orange);
+      color: var(--light-cream);
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      /* Ensures the layout fills the viewport */
+    }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  padding: 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 2;
-}
-.nav-items {
-  display: flex;
-  align-items: center;
-  gap: 2em;
-}
-nav .logo p {
-  font-weight: 700;
-  font-size: 2rem; /* increase size here */
-}
+    h1 {
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 1.25;
+    }
 
-button {
-  outline: none;
-  border: 2px solid var(--light-cream);
-  padding: 8px 16px;
-  border-radius: 4px;
-  margin-left: 10px;
-  font-weight: 700;
-  transition: background-color 0.3s, color 0.3s;
-}
+    p {
+      font-size: 15px;
+      line-height: 1.25;
+    }
 
-button:hover {
-  background-color: var(--light-cream);
-  color: var(--primary-orange);
-}
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      padding: 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+    }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  padding: 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  z-index: 2;
-}
+    .nav-items {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+    }
 
-footer h1 {
-  width: 40%;
-}
+    nav .logo p {
+      font-weight: 700;
+      font-size: 2rem;
+      /* increase size here */
+    }
 
-.footer-links {
-  display: flex;
-  gap: 2em;
-}
+    button {
+      outline: none;
+      border: 2px solid var(--light-cream);
+      padding: 8px 16px;
+      border-radius: 4px;
+      margin-left: 10px;
+      font-weight: 700;
+      transition: background-color 0.3s, color 0.3s;
+    }
 
-canvas{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-}
+    button:hover {
+      background-color: var(--light-cream);
+      color: var(--primary-orange);
+    }
 
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      padding: 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      z-index: 2;
+    }
+
+    footer h1 {
+      width: 40%;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 2em;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+    }
   </style>
 </head>
 
@@ -135,11 +140,7 @@ canvas{
 
 
 
-
-
-
-
- <script src="../webgl/src/script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 
 </html>
